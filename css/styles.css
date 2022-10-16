@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.main {
+    background: #051f38;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    width: 100%;
+}
+
+.card {
+    background: #032d56;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+}
+
+.card_title {
+    color: #fff;
+}
+
+.container_select {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.select {
+    appearance: none;
+    background-color: #084c8d;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-indent: 5;
+    padding: 10px 15px;
+}
+
+.select:focus {
+    box-shadow: 0px 0px 0px 2px #0d5ca5;
+    outline: 0;
+}
+
+.select+.select {
+    margin-top: 15px;
+}
